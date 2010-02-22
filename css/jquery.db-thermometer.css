@@ -1,0 +1,73 @@
+.ui-thermometer {
+	margin: 0 auto;
+	width: 100px;
+	border: 3px solid black;
+	border-top: 2px solid black;
+}
+
+.ui-thermometer .segment {
+	border-top: 1px solid black;
+	height: 35px;
+}
+
+.ui-thermometer .green {
+	background-color: green;
+}
+
+.ui-thermometer .yellow {
+	background-color: yellow;
+}
+
+.ui-thermometer .red {
+	background-color: red;
+}
+
+.label-left {
+	height: 50%;
+	margin-top: 22%;
+	font-size: 175%;
+	font-weight: bold;
+}
+
+.label-right {
+	height: 50%;
+	margin-left: 110%;
+	margin-top: -12%;
+}
+
+.single-digit {
+	margin-left: -28%;
+}
+
+.double-digit {
+	margin-left: -40%;
+}
+
+.triple-digit {
+	margin-left: -54%;
+}
+
+#current_val_indicator {
+	position: relative;
+	float: left;
+	top: 0px;
+	left: 35px;
+	z-index: 1;
+	margin-left: 50%;
+	height: 80px;
+	width: 175%;
+	background-image: url('../images/arrow_160x80.gif');
+	background-repeat: no-repeat;
+}
+
+#current_value {
+	position: relative;
+	top: 25%;
+	display: block;
+	text-align: center;
+	margin-left: -20px;
+	padding-top: 5px;
+	color: white;
+	font-size: 200%;
+	font-weight: bold;
+}

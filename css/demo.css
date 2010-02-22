@@ -1,0 +1,25 @@
+p {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#title {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+
+#set_value {
+	visibility: hidden;
+	margin-top: 25px;
+}
+
+#left_column {
+	width: 48%;
+	float: left;
+}
+
+#right_column {
+	width: 50%;
+	margin-left: 48%;
+}
