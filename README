@@ -1,0 +1,24 @@
+db-thermometer is a jQuery UI plugin which provides a vertical strip
+meter which resembles a thermometer for displaying sound pressure
+levels. See the demo.html file for an example of how it is used. 
+
+Other noteworthy things to mention:
+
+* The usable range of the widget is from zero to a few hundred dB. The
+  CSS would need to be tweaked for 4-digit limit values, for example.
+
+* The value makers on the right-hand side of the widget are displayed
+  when the values are divisible by 5. The yellow/red transition values
+  can be set to anything within the widget's min/max range.
+
+* When values under or over the widget's min/max range are set, the
+  pointer will display the min/max value preceded by a < or >,
+  respectively. 
+
+* The pointer graphic and text sizes are not particularly sexy, but
+  were functional for the original application this widget was used in.
+
+db-thermometer was written by Scott Garman <sgarman@zenlinux.com> and
+is freely distributed under the terms of the GNU Lesser GPL license v3.
+
+Fork freely, share and enjoy. 
