@@ -1,0 +1,38 @@
+Upcoming tasks for consideration/completion, most of which were
+suggested during the Feb 2010 pdx.js meeting. Thanks folks!
+
+Not all of these items are TODOs, many are mutually exclusive
+possibilites for resolving the underlying problem.
+
+== Better error reporting in _check_options ==
+
+* End use of alert() for reporting errors - modal dialogs are evil
+* Collate error messages and report them all at once, rather than
+  requiring iterative error discovery
+* Display the error messages as text within the div the thermometer
+  is being attached to
+* Research jQuery UI library for standard error reporting methods
+* Check jQuery UI calendar in particular for ideas
+* Ignore options that do not make sense and override them with sensible
+  defaults instead
+
+== Allow for dynamic segment height ==
+
+* Create a hidden segment, obtain its CSS height attr, then destroy
+  the hidden segment (a bit kludgy)
+* Make the thermometer's overall height elastic to fill its containing
+  element, divide height by number of segments to determine seg_height
+
+== Eliminate need for single/double/triple -digit CSS classes ==
+
+* Make range/limit values sibling elements rather than nested
+
+== Make widget more useful to others by improving generality ==
+
+* Add an optional parameter for defining the right-hand range label
+  frequency (e.g, every nth segment)
+* Stop requriing parseInt() when passing values to create the widget;
+  have the widget handle that (don't forget numeric strings with
+  preceding zeros - which can be confused with octal values)
+* Give more generic class names to the green/yellow/red segment colors
+  to allow applications where different colors may be appropriate.
