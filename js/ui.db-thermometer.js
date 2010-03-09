@@ -54,7 +54,7 @@ $.widget("ui.thermometer", {
 		}
 
 		// add the current value indicator
-		this.element.append("<div id='current_val_indicator' class='" + this.options.size + "'><span id='current_value'></span></div>");
+		this.element.append("<div class='current_val_indicator'><span class='current_value'></span></div>");
 		this._set_value(this.options.min);
 	},
 
@@ -92,8 +92,7 @@ $.widget("ui.thermometer", {
 			normalized_value = this.options.min;
 		}
 
-		// I don't think I'm supposed to use $ here:
-		$('#current_value').html(display_value);
+		this.element.children(".current_val_indicator").children(".current_value").html(display_value);
 
 		// FIXME: segment height either needs to be set as a widget
 		// parameter or infer it from CSS
@@ -102,7 +101,7 @@ $.widget("ui.thermometer", {
 		// align the current value pointer to the correct segment
 		var steps = normalized_value - this.options.min;
 		var offset = -40 - (steps * seg_height) - (1 * steps);
-		$('#current_val_indicator').animate({
+		this.element.children('.current_val_indicator').animate({
 			top: offset + "px"
 		}, 350);
 

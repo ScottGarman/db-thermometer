@@ -47,7 +47,7 @@
 	margin-left: -54%;
 }
 
-#current_val_indicator {
+.current_val_indicator {
 	position: relative;
 	float: left;
 	top: 0px;
@@ -60,7 +60,7 @@
 	background-repeat: no-repeat;
 }
 
-#current_value {
+.current_value {
 	position: relative;
 	top: 25%;
 	display: block;
