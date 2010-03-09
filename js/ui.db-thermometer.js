@@ -127,7 +127,7 @@ $.widget("ui.thermometer", {
 			return false;
 		}
 
-		// ensure value is at least the range minimum
+		// ensure initial value is at least the range minimum
 		if (this.options.value < this.options.min)
 			this.options.value = this.options.min;
 
